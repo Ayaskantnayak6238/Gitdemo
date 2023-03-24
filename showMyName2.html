@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+  border: 8px outset red; 
+}
+
+</style>
+</head>
+<body  style = "font-size:500%;" >
+
+
+<div class="center">
+  <button onclick="showName()"><b>Click me!</b></button>
+    <p id="name"></p>
+    <script>
+      function showName() {
+        var name = "Ayaskant";
+        document.getElementById("name").textContent = "Hello, " + name + "!";
+      }
+    </script>
+</div>
+
+</body>
+</html>
