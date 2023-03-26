@@ -6,16 +6,7 @@
     <meta charset="UTF-8">
     <title>Display Name on Button Click</title>
   </head>
-  <body>
-    <button onclick="showName()">Click me!</button>
-    <p id="name"></p>
-    <script>
-      function showName() {
-        var name = "Dipti";
-        document.getElementById("name").textContent = "Hello, " + name + "!";
-      }
-    </script>
-  </body>
+  
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -30,17 +21,13 @@
     }
     .div1 {
         display : flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         height: 100vh;
         gap : 20px;
     }
-    /*.div2 {
-        border : 1px solid red;
-    }
-    .div3 {
-        border : 1px solid blue;
-    }*/
+   
 
     #btn {
         font-size: larger;
@@ -54,16 +41,21 @@
         font-size: larger;
         font-weight: bold;
     }
+    #goal{
+      font-size: small;
+        font-weight: bold;
+    }
 </style>
 <!--Css Styling Ends-->
 
 <body>
     <div class="div1">
             <div class="div2">
-                <button onclick="showName()" id = "btn">Click me!</button>
+                <button onclick="showName() ; showGoal()" id = "btn">Click me!</button>
             </div>
             <div id = "div3">
                 <p id="name"></p>
+                <p id ="goal"></p>
             </div>
     </div>
 
@@ -71,11 +63,16 @@
     
       <script>
         function showName() {
-          var name = "Dipti";
+          var name = "Ayaskant";
           document.getElementById("name").textContent = "Hello, " + name + "!";
+        }
+        function showGoal(){
+          var goal= "I want to be a versatile man...";
+          document.getElementById("goal").textContent =goal;
         }
       </script>
     
 
 </body>
+
 </html>
